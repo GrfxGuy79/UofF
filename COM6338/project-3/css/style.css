@@ -1,0 +1,493 @@
+/* FONTS */
+@font-face {
+    font-family: 'Noteworthy';
+    src: url('Noteworthy-Light.woff2') format('woff2'),
+        url('Noteworthy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noteworthy-Bold';
+    src: url('Noteworthy-Bold.woff2') format('woff2'),
+        url('Noteworthy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'The Spring';
+    src: url('TheSpring.woff2') format('woff2'),
+        url('TheSpring.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* UNIVERSAL STYLES */
+:root {
+    --mt-pur: #a171a5;
+    --mt-blu: #239ba2;
+    --mt-gradient: linear-gradient(90deg, rgba(35, 155, 162, 1) 0%, rgba(161, 113, 165, 1) 70%);
+    --blu-shadow: 5px 7px 5px rgba(35, 155, 162, 0.205);
+    --pur-shadow: 5px 7px 5px rgba(161, 112, 165, 0.205);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'The Spring';
+    font-size: 1.5rem;
+    color: var(--mt-pur);
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-family: 'Noteworthy';
+    font-size: 1.25rem;
+    color: var(--mt-blu);
+}
+
+h3 {
+    font-family: 'Noteworthy-Bold';
+    font-size: 1rem;
+}
+
+button,
+.button {
+    font-family: 'Noteworthy-Bold';
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    padding: .25rem 1rem .15rem;
+    background-image: var(--mt-gradient);
+    background-size: 200%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+button:hover,
+.button:hover {
+    background-position: right;
+}
+
+main {
+    width: 100%;
+}
+
+.copy-logo {
+    color: var(--mt-blu);
+    font-style: italic;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    margin: .25rem;
+}
+
+.navbar {
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: var(--mt-pur);
+}
+
+.nav-links:hover {
+    text-decoration: none;
+    color: var(--mt-blu);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: var(--mt-pur);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+/* BOOKING ELEMENT */
+.booking {
+    width: 100%;
+    text-align: center;
+}
+
+.booking-img {
+    max-width: 350px;
+    width: 100%;
+    box-shadow: var(--blu-shadow);
+    border: 1px solid var(--mt-pur);
+}
+
+/* HOME PAGE */
+.cover {
+    text-align: center;
+    width: 100%;
+}
+
+.cover-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: var(--pur-shadow);
+}
+
+.slogan-img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.cover p {
+    margin: .5rem;
+}
+
+.about {
+    margin: 0 .5rem;
+    text-align: center;
+}
+
+.coach-img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    box-shadow: var(--blu-shadow);
+}
+
+.reviews {
+    margin: .25rem;
+    text-align: center;
+}
+
+.rating {
+    width: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.review1,
+.review2,
+.review3 {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.review {
+    margin: 0;
+    padding: 0;
+}
+
+.reviewer {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.get-info {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* SERVICES PAGE */
+.philosophy,
+.services {
+    margin: .5rem;
+}
+
+.services {
+    text-align: center;
+}
+
+.philosophy li {
+    padding: .25rem 0;
+}
+
+.lesson {
+    padding-bottom: 2rem;
+}
+
+.lesson-name,
+.lesson-dur,
+.lesson-desc,
+.lesson-cost {
+    margin: 0;
+    padding: 0;
+}
+
+.lesson-name {
+    text-decoration: underline;
+    text-decoration-color: var(--mt-pur);
+    -moz-text-decoration-color: var(--mt-pur);
+    padding-bottom: 1rem 0 .5rem 0;
+}
+
+.payment {
+    text-align: center;
+}
+
+.fa-cc-paypal,
+.fa-money-bill-alt {
+    font-size: 3rem;
+    color: var(--mt-pur);
+    margin: 0 1.5rem;
+}
+
+.venmo {
+    height: 35px;
+}
+
+.payment .lesson-desc {
+    margin: .5rem 2rem;
+}
+
+/* CONTACT PAGE */
+.contact {
+    width: 100%;
+    text-align: center;
+}
+
+input,
+textarea,
+select {
+    border: 2px solid var(--mt-blu);
+    padding: .25rem;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 4rem 2rem 1rem;
+}
+
+.f-logo {
+    max-width: 100px;
+}
+
+.copyright {
+    font-size: .5rem;
+}
+
+.foot-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-facebook {
+    color: var(--mt-blu);
+    font-size: 1.5rem;
+}
+
+.email a {
+    color: var(--mt-blu);
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 568px) {
+    header {
+        margin: 1rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+        font-size: 1.25rem;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .nav-links:hover {
+        color: var(--mt-blu);
+    }
+
+    .cover p,
+    .about,
+    .philosophy,
+    .services {
+        margin: 0 2rem;
+    }
+
+    .reviews {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    .review1,
+    .review2,
+    .review3 {
+        width: 40%;
+        margin: .5rem 1rem;
+    }
+
+    .get-info {
+        margin: 2rem 0;
+    }
+
+    .payment .lesson-desc {
+        margin: 1rem 4rem;
+    }
+
+    .booking-img {
+        max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .slogan-img {
+        max-width: 550px;
+    }
+
+    .nav-links {
+        font-size: 1.5rem;
+    }
+
+    .cover p,
+    .about,
+    .philosophy,
+    .services {
+        margin: 0 4rem;
+    }
+
+    .reviews {
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 4rem;
+    }
+
+    .review1,
+    .review2,
+    .review3 {
+        width: 40%;
+        margin: .5rem 1rem;
+    }
+
+    .get-info {
+        margin: 2rem 0;
+    }
+
+    .payment .lesson-desc {
+        margin: 1rem 6rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cover p,
+    .about,
+    .philosophy,
+    .services {
+        margin: 0 6rem;
+    }
+
+    .reviews {
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+
+    .review1,
+    .review2,
+    .review3 {
+        width: 30%;
+        margin: .5rem 1rem;
+    }
+
+    .get-info {
+        margin: 2rem 0;
+    }
+
+    .payment .lesson-desc {
+        margin: 1rem 8rem;
+    }
+}

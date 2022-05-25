@@ -1,0 +1,178 @@
+/************************
+Fonts
+************************/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/************************
+Universal Styles
+************************/
+:root {
+    --Pink: #dc0e7e;
+    --Purple: #8b2890;
+    --Blue: #00adef;
+    --Gold: #efb50f;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Josefin', sans-serif;
+}
+
+/************************
+Header
+************************/
+header {
+    width: 100%;
+}
+
+header .container {
+    width: 80%;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+}
+
+header nav {
+    float: right;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: top;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.9;
+}
+
+header li {
+    display: inline;
+}
+
+.nav-item {
+    padding: .25rem .5rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Josefin', sans-serif;
+    color: black;
+}
+
+.nav-link:hover {
+    color: var(--Blue) !important;
+    transition: all 500ms ease;
+}
+
+.hover-border {
+    position: relative;
+}
+
+.hover-border::after {
+    content: "";
+    width: 0%;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    border-radius: 2rem;
+    transition: all 500ms ease;
+    background: var(--Pink);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.hover-border:hover::after {
+    left: 0%;
+    width: 100%;
+}
+
+/************************
+Carousel
+************************/
+.carousel {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    /* top: 0;
+    left: 0; */
+    /* position: relative; */
+}
+
+.carousel-img img {
+    width: 100%;
+    height: auto;
+}
+
+/************************
+Home
+************************/
+main .container {
+    padding: .5rem 4rem;
+}
+
+/************************
+Img Links
+************************/
+figure .apparelLinkRO,
+figure .cosmeticLinkRO,
+figure .jewelryLinkRO,
+figure .propLinkRO {
+    max-width: 200px;
+    /* width: 100%; */
+}
+
+/************************
+Footer
+************************/
+footer .container {
+    padding: 2rem 4rem;
+}
+
+footer table {
+    width: 100%;
+}
+
+footer table td {
+    width: 25%;
+    text-align: center;
+}
+
+.small-logo {
+    width: 100px;
+    float: left;
+}
+
+.footer-link,
+.footer-email {
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+}

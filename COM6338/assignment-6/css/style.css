@@ -1,0 +1,118 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* UNIVERSAL STYLES */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../images/italybg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Smooch', cursive;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+li {
+    list-style-position: inside;
+}
+
+.mainbtn {
+    background-color: green;
+    color: white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+    margin: 1.5rem;
+    padding: .25rem .5rem;
+    text-decoration: none;
+}
+
+.mainbtn:hover {
+    background-color: red;
+    color: white;
+}
+
+#linkbtn {
+    background-color: green;
+    color: white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+    margin: 1.5rem;
+    padding: .25rem .5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+header .logo {
+    max-width: 200px;
+    width: 100%;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    text-align: center;
+}
+
+.foodimg {
+    max-width: 500px;
+    width: 100%;
+    border: .15rem solid white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    margin: 0 1rem;
+}
+
+.history {
+    justify-content: center;
+    text-align: center;
+    margin: .5rem 1rem;
+    padding: .5rem;
+    background-color: rgba(99, 3, 3, 0.75);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}

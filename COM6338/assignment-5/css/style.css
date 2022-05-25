@@ -1,0 +1,81 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* UNIVERSAL STYLES */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* font-size: 16px; */
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    background-image: url(../images/swhouseBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+}
+
+main {
+    width: 100%;
+}
+
+/* MAIN */
+.title {
+    padding: 1rem;
+    text-align: center;
+}
+
+.title img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+}
+
+button {
+    margin: .15rem 0;
+    color: white;
+    background: blue;
+    font-weight: bold;
+    padding: .15rem .5rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+button:hover {
+    color: blue;
+    background-color: yellow;
+}
