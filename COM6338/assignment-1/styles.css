@@ -1,0 +1,111 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Style Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #def3f7;
+}
+
+/* Main Styles */
+main {
+    margin: 2rem 15rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #ffc0cb;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+    color: #8a2be2;
+}
+
+img {
+    width: 50%;
+    margin: 1rem auto;
+    box-shadow: 10px 10px 15px -5px rgba(255, 192, 203, 1);
+}
+
+/* Media Queries */
+@media screen and (min-width:675px) {
+    body {
+        background-color: #dee6f7;
+    }
+
+    img {
+        box-shadow: 10px 10px 15px -5px rgb(255, 192, 255);
+    }
+}
+
+@media screen and (min-width:999px) {
+    body {
+        background-color: #ebdef7;
+    }
+
+    img {
+        box-shadow: 10px 10px 15px -5px rgb(192, 240, 255);
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body {
+        background-color: #f7deeb;
+    }
+
+    img {
+        box-shadow: 10px 10px 15px -5px rgb(255, 192, 192);
+    }
+}
+
+@media screen and (max-width:1080px) {
+    h1 {
+        color: #ffc0fa;
+    }
+}
+
+@media screen and (max-width:550px) {
+    h1 {
+        color: #cec0ff;
+    }
+}
+
+@media screen and (max-width:400px) {
+    h1 {
+        color: #c0ffe7;
+    }
+}
+
+@media screen and (min-width:715px) and (max-width:960px) {
+    p {
+        font-family: 'Montserrat', sans-serif;
+        ;
+    }
+}
