@@ -1,0 +1,122 @@
+:root {
+	--primary-color: #6003c3;
+	--white: #ffffff;
+	--box-color-1: #fcff00;
+	--box-color-2: #57ffc9;
+	--box-color-3: #a5ff01;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100vh;
+}
+
+body {
+	font-family: "Bebas Neue", Impact, sans-serif;
+	text-align: center;
+	color: var(--primary-color);
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+header {
+	padding: 1rem;
+	background: var(--primary-color);
+	color: var(--white);
+}
+main {
+	padding: 0 1rem;
+}
+#message {
+	font-size: 1.5rem;
+}
+.score {
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	margin: 2rem;
+}
+#wins,
+#losses {
+	padding: 0 0.5rem;
+}
+
+.boxes {
+	display: inline-block;
+	align-items: center;
+}
+
+.box {
+	border: 10px solid var(--primary-color);
+	max-width: 125px;
+	max-height: 125px;
+	min-width: 125px;
+	min-height: 125px;
+	margin: 1.5rem;
+	text-align: center;
+	line-height: 125px;
+	font-size: 4rem;
+	color: var(--primary-color);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.2) 15px 0px 38px,
+		rgba(0, 0, 0, 0.2) 10px 10px 20px;
+}
+
+#box-1 {
+	background: var(--box-color-1);
+}
+
+#box-2 {
+	background: var(--box-color-2);
+}
+
+#box-3 {
+	background: var(--box-color-3);
+}
+
+/* Box Animation */
+.hvr-bounce-in {
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+	transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+/* MEDIA QUERIES */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.boxes {
+		display: flex;
+		justify-content: center;
+	}
+	.box {
+		margin: 0 2rem;
+	}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.boxes {
+		display: flex;
+		justify-content: center;
+	}
+	.box {
+		margin: 0 3rem;
+	}
+}
