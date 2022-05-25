@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Assignment 5 | Johnny Bruner</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="Logo" title="Logo"></a>
+            <nav>
+                <ul>
+                    <li class="nav-item hover-border">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item hover-border">
+                        <a href="#" class="nav-link">History</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="top-border-bar"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Form -->
+            <section>
+                <h1>You and the BurlyQ</h1>
+                <h2>Tell us about you and what you know about the BurlyQ</h2>
+                <form id="burlyform" name="burlyform" method="post" action="form.php"
+                    onsubmit="return validateForm(this)">
+
+                    <div class="input-form">
+                        <label for="name" class="input-label">Your Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Rosie Riveter" required>
+                    </div>
+
+                    <div class="input-form">
+                        <label for="email" class="input-label">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="rosieriveter@burly.com" required>
+                    </div>
+
+                    <div class="input-form">
+                        <label for="phone" class="input-label">Phone #:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="000-000-0000" required>
+                    </div>
+
+                    <div class="input-form">
+                        <label for="burly" class="select-label">Do you go to Burlesque Shows often?</label>
+                        <select name="burly" id="burly">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="input-form">
+                        <label for="memory" class="input-label">What is your favorite Burlesque Show memory?</label>
+                        <textarea name="memory" id="memory" required></textarea>
+                    </div>
+
+                    <input type="submit" name="submit" value="Submit" class="submit" />
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Site designed by Johnny Bruner</p>
+        </div>
+    </footer>
+</body>
+
+</html>
