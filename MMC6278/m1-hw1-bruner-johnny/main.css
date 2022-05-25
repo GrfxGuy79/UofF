@@ -1,0 +1,43 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+/* GLOBAL */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 3rem;
+	text-align: center;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Vujahday Script', cursive;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+nav {
+	text-align: left;
+}
+
+footer {
+	margin: 15rem;
+}
