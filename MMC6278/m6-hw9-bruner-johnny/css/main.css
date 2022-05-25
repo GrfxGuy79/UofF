@@ -1,0 +1,90 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/* GLOBAL */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	text-align: center;
+	margin: 2rem 0;
+	background: rgb(14, 1, 163);
+	background: linear-gradient(
+		180deg,
+		rgba(14, 1, 163, 1) 0%,
+		rgba(34, 209, 207, 1) 100%
+	);
+	background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+form {
+	margin: 3rem 0;
+}
+
+input {
+	padding: 0.25rem 0.75rem;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+
+input::placeholder {
+	color: rgb(180, 179, 179);
+}
+
+button {
+	color: white;
+	background: black;
+	text-transform: uppercase;
+	padding: 0.25rem 0.75rem;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+
+p {
+	margin: 2rem 0;
+}
+/* MAIN */
+.information {
+	margin: 2rem 0;
+}
+form > input {
+	text-align: center;
+}
+
+/* FOOTER */
+footer {
+	margin: 5rem;
+}
