@@ -1,0 +1,312 @@
+/************************
+Import Fonts
+************************/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap");
+
+/************************
+Universal Styles
+************************/
+:root {
+    /* Fonts */
+    --Montserrat: "Montserrat", sans-serif;
+    --Josefin: "Josefin Sans", sans-serif;
+    --GVibes: "Great Vibes", cursive;
+    /* Theme Colors */
+    --Gold-Theme: #ffb404;
+    --Blue-Theme: #33bbff;
+    --Blu-Pnk-Pur-Gradient: linear-gradient(90deg,
+            rgba(51, 187, 255, 1) 0%,
+            rgba(101, 46, 199, 1) 50%,
+            rgba(254, 11, 157, 1) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #110213;
+    color: white;
+    font-family: var(--Montserrat);
+    letter-spacing: .03rem;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--GVibes);
+    color: var(--Gold-Theme);
+    letter-spacing: .13rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+/************************
+Header Style
+************************/
+header {
+    background-image: url(../images/blk_seq_bg.jpg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 109px;
+    position: fixed;
+    z-index: 1;
+}
+
+header .container {
+    padding: 0.1rem 4rem;
+}
+
+header .logo {
+    display: inline-block;
+    max-width: 30%;
+    float: left;
+}
+
+header nav {
+    padding: 3rem 0 2rem 0;
+    display: inline-block;
+    width: 65%;
+    text-align: right;
+}
+
+header li {
+    display: inline;
+}
+
+.nav-item {
+    padding: 0 .5rem .3rem .5rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--Josefin);
+    color: var(--Blue-Theme);
+}
+
+.nav-link:hover {
+    color: white !important;
+    transition: all 500ms ease;
+}
+
+.hover-border {
+    position: relative;
+}
+
+.hover-border::after {
+    content: "";
+    width: 0%;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    border-radius: 2rem;
+    transition: all 500ms ease;
+    background: var(--Blu-Pnk-Pur-Gradient);
+}
+
+.hover-border:hover::after {
+    left: 0%;
+    width: 100%;
+}
+
+.top-border-bar {
+    background: var(--Blu-Pnk-Pur-Gradient);
+    height: .2rem;
+}
+
+/************************
+Main Style
+************************/
+main {
+    /* padding: 8rem 0 3rem 0; */
+}
+
+main .container {
+    padding: 8rem 10rem 3rem 10rem;
+    position: relative;
+}
+
+/************************
+Footer Style
+************************/
+footer .container {
+    padding: 0.1rem 4rem 2rem 4rem;
+    text-align: center;
+}
+
+/************************
+Card Style
+************************/
+.card {
+    position: relative;
+    width: 332px;
+    height: 500px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 2px 2px 35px rgba(255, 3, 179, 0.25);
+    margin: 0 auto;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .details .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .details .content h2 {
+    font-size: 2.5rem;
+}
+
+.card .details .content .location {
+    font-family: var(--Josefin);
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.card .details .content .social-icons {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+
+.card .details .content .social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.card .details .content .social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.card:hover {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.card:hover .imgBox {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    /* box-shadow: 5px 10px 35px rgba(255, 3, 179, 0.25); */
+}
+
+.card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    /* backface-visibility: hidden; */
+    /* -webkit-backface-visibility: hidden; */
+}
+
+/************************
+History Style
+************************/
+.history h2 {
+    font-family: var(--Josefin);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.history h3 {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.history p {
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
+
+.history p::first-letter {
+    font-size: 1.5rem;
+    color: var(--Blue-Theme);
+}
+
+.history .card h2 {
+
+    font-family: var(--GVibes);
+    color: var(--Gold-Theme);
+}
+
+.history .card p {
+    text-align: center;
+    color: black;
+    padding: 1rem;
+}
+
+.history .credit {
+    font-size: .5rem;
+}
