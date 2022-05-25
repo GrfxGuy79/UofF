@@ -1,0 +1,412 @@
+/*
+FONTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/*
+UNIVERSAL STYLES
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF url(../images/img05.jpg) repeat;
+    font-family: 'Krub', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #5B5B5B;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    font-family: 'Charmonman', cursive;
+    font-weight: 200;
+    color: #222222;
+}
+
+h1 {
+    font-size: 3.8em;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p,
+ul,
+ol {
+    margin-top: 0;
+    line-height: 180%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #5E5E5E;
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    margin: 2rem auto;
+}
+
+/*
+HEADER
+*/
+
+figure .banner {
+    margin-top: 2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+LOGO
+*/
+
+.logo {
+    /* float: left; */
+    text-transform: none;
+}
+
+/*
+NAVBAR
+*/
+
+nav {
+    /* float: right; */
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-ul {
+    /* float: right; */
+    padding: 20px 0 0 0;
+    list-style: none;
+    line-height: normal;
+}
+
+.nav-ul li {
+    float: left;
+}
+
+.nav-ul li a {
+    display: block;
+    line-height: 100px;
+    margin-right: 1px;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1F1F1F;
+    border: none;
+}
+
+nav a:hover,
+nav .current_page_item a {
+    background: url(../images/img01.jpg) repeat;
+    color: #FFFFFF;
+}
+
+.menu-toggle {
+    background-color: transparent;
+    border: 0;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    display: none;
+    top: 0;
+    right: 0;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+/*
+MAIN
+*/
+
+main {
+    padding: 0;
+}
+
+/* Content */
+
+section {
+    float: right;
+    width: 70%;
+    padding: 0;
+}
+
+article {
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E7EBED;
+    padding: 0 0 45px 0;
+    text-align: justify;
+    clear: both;
+}
+
+article .title {
+    padding: 7px 0 0 0;
+    letter-spacing: -1px;
+}
+
+article .title a {
+    border: none;
+    color: #222222;
+}
+
+article .meta {
+    margin-bottom: 30px;
+    padding: 10px 0 10px 0;
+    text-align: left;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+article .meta .date {
+    float: left;
+}
+
+article .meta .posted {
+    float: right;
+}
+
+article .meta .posted a,
+.entry a {
+    text-decoration: underline;
+}
+
+article .entry img {
+    float: right;
+    width: 55%;
+    padding: 0 0 0 20px;
+}
+
+article .links {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+article .more {
+    display: block;
+    float: left;
+    width: 88px;
+    padding: 5px 5px;
+    margin-right: 10px;
+    background: #222222;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+article .comments {
+    display: block;
+    float: left;
+    width: 88px;
+    padding: 5px 5px;
+    background: #222222;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+article .more,
+article .comments {
+    text-decoration: none;
+}
+
+/*
+SIDEBAR
+*/
+
+aside {
+    float: left;
+    width: 25%;
+    margin: 0;
+    padding: 30px 0 0 0;
+}
+
+aside ul {
+    margin: 0;
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+aside li {
+    line-height: 40px;
+    border-bottom: 1px solid #E7EBED;
+    margin: 0;
+    border-left: none;
+}
+
+aside li span {
+    display: block;
+    margin-top: -20px;
+    padding: 0;
+    font-size: 11px;
+    font-style: italic;
+}
+
+aside li a {
+    padding: 0 0 0 20px;
+    background: url(../images/img04.jpg) no-repeat left 50%;
+}
+
+aside h3 {
+    padding: 15px 0 0 0;
+    letter-spacing: -.5px;
+    color: #222222;
+}
+
+aside p {
+    margin: 0;
+    padding: 0 30px 20px 30px;
+    text-align: justify;
+}
+
+aside a {
+    border: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/*
+FOOTER
+*/
+
+footer {
+    clear: both;
+    height: 140px;
+    margin: 0 auto;
+    padding: 50px 0 15px 0;
+    font-family: 'Abel', sans-serif;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+/*
+MEDIA QUERIES
+*/
+@media only screen and (max-width:375px) {
+
+    /* LOGO */
+    h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    article .title {
+        padding: 0;
+    }
+
+    article .meta .date,
+    article .meta .posted {
+        display: block;
+        clear: both;
+    }
+
+    article .entry img {
+        clear: both;
+        width: 100%;
+        padding: 0 0 0 20px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    h2 {
+        font-size: 2.5em;
+    }
+
+    section {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* article .entry img {
+        width: 75%;
+    } */
+}
+
+@media only screen and (max-width:768px) {
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-ul.show {
+        display: flex;
+        z-index: 99;
+    }
+
+    .nav-ul li a {
+        line-height: normal;
+        background: url(../images/img05.jpg) repeat;
+        color: #1F1F1F;
+    }
+
+    nav a:hover,
+    nav .current_page_item a {
+        background: url(../images/img01.jpg) repeat;
+        color: #FFFFFF;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width:860px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width:1024px) {}
