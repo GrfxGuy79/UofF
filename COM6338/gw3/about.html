@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A website about television show FREINDS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Group Work 2 - HTML5 Friends</title>
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/64db3d57b9.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar">
+
+                <a href="#"><img src="images/logo.png" class="nav-logo" alt="Logo" title="Logo"></a>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open the menu"><i class="fas fa-bars"
+                        aria-hidden="true"></i></button>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link hover-border">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link hover-border">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="reunion.html" class="nav-link hover-border">Reunion</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <h1>The Story of Friends</h1>
+            <!-- DOTS ANIMATION -->
+            <div class="dot">
+                <span class="dot-1"></span>
+                <span class="dot-2"></span>
+                <span class="dot-3"></span>
+                <span class="dot-4"></span>
+            </div>
+
+            <section class="about">
+
+                <div class=shrink>
+                    <figure class="img-1 column1">
+                        <img src="images/cast.png" alt="Friends Cast" title="Friends Cast">
+                        <figcaption>Warner Bros. Series</figcaption>
+                    </figure>
+                </div>
+                <div class="column2">
+                    <p>Friends is a 90's Comedy TV show, based in Manhattan, about six friends who go
+                        through just about every life experience imaginable together; love, marriage, divorce, children,
+                        heartbreaks, fights, new jobs and job losses and all sorts of drama. The show starts off with
+                        each
+                        character in their 20's, and expands over a ten year period, as each character tries to find
+                        happiness, success and what the true meaning of a "friend" really is. Our six famous characters
+                        are
+                        Rachel Green, Phoebe Buffay, Monica Geller, Ross Geller, Joey Tribbiani and Chandler Bing.
+                    </p>
+                    <p>
+                        Kauffman and Crane began developing Friends under the working title Insomnia Cafe between
+                        November
+                        and December 1993. They presented the idea to Bright, and together they pitched a seven-page
+                        treatment of the show to NBC. After several script rewrites and changes, including title changes
+                        to
+                        Six of One and Friends Like Us, the series was finally named Friends.
+                    </p>
+                    <p>
+                        Filming took place at Warner Bros. Studios in Burbank, California. All ten seasons of Friends
+                        ranked
+                        within the top ten of the final television season ratings; it ultimately reached the number-one
+                        spot
+                        in its eighth season. The series finale aired on May 6, 2004, and was watched by around 52.5
+                        million
+                        American viewers, making it the fifth most-watched series finale in television history, and the
+                        most-watched television episode of the 2000s.</p>
+                </div>
+            </section>
+            <section class="imgs">
+                <div class="border">
+                    <figure class="img-2">
+                        <img src="images/last.jpg" alt="Friends Cast" title="Friends Cast">
+                        <figcaption>Last episode 2004</figcaption>
+                    </figure>
+                    <figure class="img-3">
+                        <img src="images/centralperk.jpeg" alt="Friends Cast" title="Friends Cast">
+                        <figcaption>Janice and Gunther</figcaption>
+                    </figure>
+                    <figure class="img-4">
+                        <img src="images/friends.jpg" alt="Friends Cast" title="Friends Cast">
+                        <figcaption>Friends Reunion Special</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="dot">
+                <span class="dot-1"></span>
+                <span class="dot-2"></span>
+                <span class="dot-3"></span>
+                <span class="dot-4"></span>
+            </div>
+
+            <p>Website Designed by Johnny, Karen, and Nikia</p>
+        </footer>
+
+    </div><!-- END CONTAINER -->
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+    </script>
+    <!-- MENU TOGGLE -->
+    <script>
+        // MENU
+        const menuToggle = document.getElementById('menu-toggle');
+        const navUL = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

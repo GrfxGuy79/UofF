@@ -1,0 +1,452 @@
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
+
+/* UNIVERSAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+html,
+body {
+    background-color: #000;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 16px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Architects Daughter", cursive;
+    margin: 2rem 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Architects Daughter", cursive;
+    margin: 2rem 0;
+}
+
+h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: "Architects Daughter", cursive;
+    margin: 2rem 0;
+}
+
+figcaption {
+    font-family: cursive;
+    font-size: 15px;
+}
+
+p {
+    text-align: left;
+    padding: 0 1rem;
+}
+
+
+/* HEADER */
+header {
+    border-bottom: 2px solid #8B0000;
+    width: 95%;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-item {
+    padding: .75rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #0091EA;
+}
+
+.nav-link:hover {
+    color: #FFFF00;
+    transition: all 500ms ease;
+}
+
+.hover-border {
+    position: relative;
+}
+
+.hover-border::after {
+    content: "";
+    width: 0%;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    border-radius: 2rem;
+    transition: all 500ms ease;
+    background: red;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.hover-border:hover::after {
+    left: 0%;
+    width: 100%;
+}
+
+.nav-logo {
+    max-width: 300px;
+    width: 100%;
+}
+
+.menu-toggle {
+    background-color: transparent;
+    border: 0;
+    color: yellow;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    display: none;
+    top: 0;
+    right: 0;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+/* DOTS */
+.dot {
+    text-align: center;
+}
+
+.dot-1 {
+    margin: .25rem;
+    height: 35px;
+    width: 35px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: space-between;
+    animation-name: dot;
+    animation-duration: 2s;
+}
+
+.dot-2 {
+    margin: .25rem;
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: space-between;
+    animation-name: dot;
+    animation-duration: 3s;
+}
+
+.dot-3 {
+    margin: .25rem;
+    height: 35px;
+    width: 35px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: space-between;
+    animation-name: dot;
+    animation-duration: 4s;
+}
+
+.dot-4 {
+    margin: .25rem;
+    height: 35px;
+    width: 35px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: space-between;
+    animation-name: dot;
+    animation-duration: 5s;
+}
+
+@keyframes dot {
+    0% {
+        left: -50px;
+    }
+
+    50% {
+        left: 50px;
+    }
+
+    100% {
+        left: 0px;
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(1000px);
+        opacity: 1;
+        -webkit-transform: translate(1000px);
+        -moz-transform: translate(1000px);
+        -ms-transform: translate(1000px);
+        -o-transform: translate(1000px);
+    }
+}
+
+/* MAIN */
+main {
+    width: 95%;
+}
+
+/* HOME */
+.friends {
+    text-align: center;
+}
+
+.video {
+    max-width: 1020px;
+    width: 95%;
+}
+
+/* ABOUT */
+.about {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.about img,
+.imgs img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.shrink {
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+}
+
+.shrink .img-1 :hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    opacity: 0.3;
+}
+
+.border .img-2 {
+    transition: .5s ease;
+    border: 2px solid red;
+}
+
+.border .img-2:hover {
+    box-shadow: 0 0 0 10px red;
+    transition: .5s ease;
+}
+
+.border .img-3 {
+    transition: .5s ease;
+    border: 2px solid blue;
+}
+
+.border .img-3:hover {
+    box-shadow: 0 0 0 10px blue;
+    transition: .5s ease;
+}
+
+.border .img-4 {
+    transition: .5s ease;
+    border: 2px solid yellow;
+}
+
+.border .img-4:hover {
+    box-shadow: 0 0 0 10px yellow;
+    transition: .5s ease;
+}
+
+/* REUNION */
+.reunion {
+    width: 100%;
+}
+
+.favorites {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.update,
+.update p {
+    text-align: center;
+}
+
+.img-5 {
+    max-width: 900px;
+    width: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+.favorites img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.nikia {
+    color: blue;
+}
+
+.johnny {
+    color: red;
+}
+
+.karen {
+    color: yellow;
+}
+
+.favname {
+    color: white;
+}
+
+/* FOOTER */
+footer p {
+    color: yellow;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 320px) {
+    .container {
+        padding: .25rem;
+    }
+
+    .navbar {
+        padding: 1rem .25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .menu-toggle {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width:550px) {
+    .nikiafav {
+        text-align: center;
+    }
+
+    .johnnyfav {
+        text-align: center;
+    }
+
+    .karenfav {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:798px) {
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-menu.show {
+        display: flex;
+        z-index: 99;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:798px) {
+
+    .about,
+    .nikiafav,
+    .johnnyfav,
+    .karenfav {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .column1 {
+        order: 1;
+        width: 100%;
+    }
+
+    .column2 {
+        order: 2;
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
