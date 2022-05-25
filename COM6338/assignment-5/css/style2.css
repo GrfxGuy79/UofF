@@ -1,0 +1,189 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* UNIVERSAL STYLES */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* font-size: 16px; */
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    background-image: url(../images/swhouseBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+main {
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header .logo {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* MAIN */
+.title {
+    padding: 1rem;
+    text-align: center;
+}
+
+.title img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+}
+
+.plot p,
+.inspiration p {
+    margin: 0 .5rem 1rem;
+    padding: 1rem;
+    background-color: rgba(21, 3, 99, 0.5);
+}
+
+.book {
+    margin: 0 .5rem 1rem;
+    padding: 1rem;
+}
+
+#plottext {
+    display: none;
+}
+
+#plotbtn,
+#inspbtn {
+    margin: .15rem 0;
+    color: white;
+    background: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .15rem .5rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+#bookbtn {
+    width: 100%;
+    color: white;
+    background: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .15rem .5rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 320px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .plot p,
+    .inspiration p {
+        margin: 0 .75rem 1rem;
+        padding: 1rem;
+        background-color: rgba(21, 3, 99, 0.5);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .plot p,
+    .inspiration p {
+        margin: 0 1rem 1.5rem;
+        padding: 1rem;
+        background-color: rgba(21, 3, 99, 0.5);
+    }
+}
+
+@media only screen and (min-width: 780px) {
+
+    .plot p,
+    .inspiration p {
+        margin: 0 3rem 1.5rem;
+        padding: 1rem;
+        background-color: rgba(21, 3, 99, 0.5);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .plot p,
+    .inspiration p {
+        margin: 0 5rem 2rem;
+        padding: 1rem;
+        background-color: rgba(21, 3, 99, 0.5);
+    }
+}
