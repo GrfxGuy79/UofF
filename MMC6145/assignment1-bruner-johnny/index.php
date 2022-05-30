@@ -15,12 +15,13 @@
 <header></header>
 
 <main>
+    <div class="form-title">
+        <h2>Please fill out the form below</h2>
+    </div>
+
 <!-- FORM -->
 <form action="results.php" method="POST">
-    <div class="form-title">
-        <h1>Please fill out the form below</h1>
-        <h2>Thank you</h2>
-    </div>
+    
 
     <ul>
         <!-- INPUT -->
@@ -38,12 +39,12 @@
 </li>
         <li class="phone-field">   
             <label for="phone" class="phone-label">Phone Number:</label>
-            <input type="tel" name="phone" class="phone" value="">
-            <label for="phone" class="phone-ex">(###)###-####</label>
+            <input type="tel" name="phone" class="phone" value="" size="10" maxlength="10">
+            <label for="phone" class="phone-ex">##########</label>
 </li>
 
     <!-- RADIO -->
-    <h3>What Degree Are You Seeking?</h3>
+    <label for="degree" class="degree-label">What Degree Are You Seeking?</label>
 <li class="degree-field">
     <input type="radio" name="degree-a" id="degree" value="Associates">
        <label for="radio-label-a">Associates</label>
@@ -55,7 +56,7 @@
        <label for="radio-label-p">PhD</label>
 </li>
 <!-- DROPDOWN -->
-<h3>What Year Are You Currently In?</h3>
+<label for="year" class="year-label">What Year Are You Currently In?</label>
 <li class="year-field">
 <select name="year" class="year">
     <option value="Freshman">Freshman</option>
@@ -66,7 +67,7 @@
 </li>
 
 <!-- TEXTAREA -->
-<h3>Any Comments You Would Like To Add?</h3>
+<label for="comments" class="comments-label">Any Comments You Would Like To Add?</label>
 <li class="comments-field">
     <textarea name="comments" class="comments" cols="30" rows="10"></textarea>
 </li>
