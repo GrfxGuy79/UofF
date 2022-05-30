@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
 
 /* GLOBAL */
-html,body{
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,42 +12,96 @@ html,body{
     font-size: 16px;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
-background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(214,255,255,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(214, 255, 255, 1) 100%);
 }
 
-
-main
-{
-    margin: 1rem 5rem;
+/* FORM */
+main {
+    width: 30%;
+    margin: 1rem auto;
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
     padding: 0;
     margin: 0;
 }
 
-h2{
+h2 {
     font-family: 'Montez', cursive;
     font-size: 2rem;
 
 }
-ul{
+
+ul {
     padding: 0;
     margin: 0;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.name-label,.pass-label, .email-label,.phone-label,.phone-ex,.degree-label,.year-label,.comments-label{
-    display:block;
+.name-label,
+.pass-label,
+.email-label,
+.phone-label,
+.phone-ex,
+.degree-label,
+.year-label,
+.comments-label {
+    color: rgb(4, 193, 240);
+    display: block;
     font-size: .95rem;
     font-weight: 600;
+    padding: .5rem 0 0;
 }
-.phone-ex{
-    font-size: .75rem;
+
+.degree-label,
+.year-label,
+.comments-label,
+.submit {
+    margin: 1rem 0 0;
+}
+
+.phone-ex {
+    font-size: .65rem;
     color: grey;
+    padding: 0;
+}
+
+.name,
+.password,
+.email,
+.phone,
+.year,
+.comments {
+    width: 100%;
+}
+
+.submit {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background: rgb(4, 193, 240);
+    padding: .15rem 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+}
+
+.submit:hover {
+    background: rgb(79, 4, 240);
 }

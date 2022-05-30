@@ -46,12 +46,12 @@
     <!-- RADIO -->
     <label for="degree" class="degree-label">What Degree Are You Seeking?</label>
 <li class="degree-field">
-    <input type="radio" name="degree-a" id="degree" value="Associates">
-       <label for="radio-label-a">Associates</label>
- <input type="radio" name="degree-b" id="degree" value="Bachelors">
-     <label for="radio-label-b">Bachelors</label>
-<input type="radio" name="degree-m" id="degree" value="Masters">
-        <label for="radio-label-m">Masters</label>
+    <input type="radio" name="degree-a" class="degree" value="Associates">
+       <label for="radio-label-a">Associates</label><br>
+ <input type="radio" name="degree-b" class="degree" value="Bachelors">
+     <label for="radio-label-b">Bachelors</label><br>
+<input type="radio" name="degree-m" class="degree" value="Masters">
+        <label for="radio-label-m">Masters</label><br>
 <input type="radio" name="degree-phd" class="degree" value="PhD">
        <label for="radio-label-p">PhD</label>
 </li>
