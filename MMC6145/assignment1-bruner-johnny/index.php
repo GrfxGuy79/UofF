@@ -15,6 +15,20 @@
 <header></header>
 
 <main>
+<!-- PASSWORD FORM -->
+<form action="" method="post" class="password-form">
+<ul>
+    <li class="pass-field"> 
+            <label for="password" class="pass-label">Password:</label>   
+            <input type="password" name="password" class="password" value="">
+            <label for="password" class="phone-ex">Please enter the password and press Enter</label>
+</li>
+</ul>
+</form>
+
+
+<?php
+if(isset($_POST['password']) && $_POST['password']=='bruner'){?>
     <div class="form-title">
         <h2>Please fill out the form below</h2>
     </div>
@@ -29,10 +43,7 @@
             <label for="name" class="name-label">Name:</label>
 <input type="text" name="name" class="name" value="">
         </li>
-        <li class="pass-field"> 
-            <label for="password" class="pass-label">Password:</label>   
-            <input type="password" name="password" class="password" value="">
-</li>
+        
         <li class="email-field">   
             <label for="email" class="email-label">Email:</label>
             <input type="email" name="email" class="email" value="">
@@ -79,6 +90,13 @@
 
     </ul>
 </form>
+<?php 
+}elseif (isset($_POST['password']) && $_POST['password']!='bruner'){
+    $errormsg = "Sorry That Password Is Incorrect, Please Try Again!";
+    echo '<h3 class="errormsg">'.$errormsg.'</h3>';
+}
+?>
+    
 </main>
 
 <footer></footer>
