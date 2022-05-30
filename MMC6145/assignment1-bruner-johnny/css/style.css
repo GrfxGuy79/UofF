@@ -107,10 +107,28 @@ li {
     background: rgb(79, 4, 240);
 }
 
-.errormsg{
+.errormsg {
     color: red;
     text-transform: uppercase;
     font-size: .75rem;
     text-align: center;
     padding: 1rem 0;
+}
+
+/* RESULTS PAGE */
+.hello {
+    text-align: center;
+}
+
+.contact-info,
+.comments-info,.degree-info {
+    padding: 1rem 0 0;
+}
+.contact-info h3,
+.comments-info h3,.degree-info h3 {
+    color: rgb(4, 193, 240);
+}
+.contact-info p {
+    padding: 0;
+    margin: 0;
 }
