@@ -1,4 +1,10 @@
 <?php 
 
+$number = 20;
+$name = "Efren";
 
-echo time();
+if (($number == 20) || ($name == "Billy")){
+  echo "You pass the test";
+}else {
+  echo "You do not pass the test";
+}
