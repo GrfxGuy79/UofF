@@ -14,6 +14,9 @@ include './includes/functions.php';
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/64db3d57b9.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
