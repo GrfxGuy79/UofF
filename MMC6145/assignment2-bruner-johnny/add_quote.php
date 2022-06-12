@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="text" class="form-control" name="source" id="source">
   </div>
   <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="favorite">
+    <input type="checkbox" class="form-check-input" name="favorite" id="favorite">
     <label class="form-check-label" for="favorite" value="yes">Favorite?</label>
   </div>
   <button type="submit" class="btn btn-primary">Add Quote</button>
