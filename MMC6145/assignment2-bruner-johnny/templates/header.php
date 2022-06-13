@@ -25,7 +25,37 @@ include './includes/functions.php';
 </head>
 <body>
 
-<div class="container">
-    <h1><a href="index.php">My Site Of Quotes</a></h1>
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php"><h1>My Site of Quotes</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+    <!-- CHECK IF LOGGED IN -->
+    <?php
+if ((is_admin()) || (isset($loggedin) && $loggedin)) {
+    echo '<form class="d-flex">
+    <a href="view_quotes.php">
+        <button class="btn btn-outline-primary me-2" type="button">View All Quotes</button></a>
+        <a href="add_quote.php">
+        <button class="btn btn-outline-info me-2" type="button">Add A New Quote</button></a>
+        <a href="logout.php">
+        <button class="btn btn-outline-danger me-2" type="button">Logout</button></a>
+      </form>';
+} else {
+    echo '<form class="d-flex">
+        <a href="login.php">
+        <button class="btn btn-outline-success me-2" type="button">Login</button></a>
+      </form>';
+}
+?>
+
+    </div>
+  </div>
+</nav>
 
     <!-- BODY CONTENT -->
+    <div class="container">
