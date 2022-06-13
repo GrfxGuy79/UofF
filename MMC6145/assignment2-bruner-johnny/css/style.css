@@ -2,30 +2,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600&display=swap');
 
 /* GLOBAL */
-html,body{
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
 }
 
-body{
-font-family: 'Josefin Sans', sans-serif;
+body {
+    font-family: 'Josefin Sans', sans-serif;
 
 }
-
-h1{
+.container{
+    margin: 0 5rem;
+}
+h1 {
     font-size: 2rem;
 }
-nav{
+
+nav {
     margin: 0 0 2rem;
 }
-.navbar{
+
+.navbar {
     padding: 1rem 4rem;
 }
 
+.edit {
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+.favorite{
+    color: yellow;
+    font-size: 1.5rem;
+}
+.viewlinks{
+    text-align: center;
+    padding: 2rem 0;
+}
+.quote{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.source{
+    font-style: italic;
+}
 /* FOOTER */
-footer{
+footer {
     margin: 3rem 0;
     text-align: center;
 }

@@ -17,17 +17,30 @@ if (isset($_GET['random'])) {
 if ($result = mysqli_query($dbc, $query)) {
     $row = mysqli_fetch_array($result);
 
+    // VIEW LINKS
+    echo '<div class="viewlinks">
+    <a href="index.php"><button class="btn btn-outline-primary me-2 btn-sm">View Latest Quote</button></a>
+    <a href="index.php?random=true"><button class="btn btn-outline-primary me-2 btn-sm">View A Random Quote</button></a>
+    <a href="index.php?favorite=true"><button class="btn btn-outline-primary btn-sm">View A Random Favorite Quote</button></a></div>';
+
     // DISPLAY RESULTS
-    echo '<div><blockquote>' . $row['quote'] . '</blockquote>- ' . $row['source'] . '';
+    echo '<div>';
     // CHECK IF FAVORITE
     if ($row['favorite'] == 1) {
-        echo '<strong>Favorite</strong>';
+        echo '<i class="fa-solid fa-star favorite" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        title="This Is A Favorite Quote"></i>';
     }
+    echo '<div class="quote">' . $row['quote'] . '</div>
+    <div class="source">- ' . $row['source'] . '</div>';
+
     echo '</div>';
 
     if (is_admin()) {
         // ADMIN LINKS
-        echo '<div><p><a href="edit_quote.php?id=' . $row['id'] . '"><i class="fa-solid fa-pencil edit me-2"></i></a>
+        echo '<div><p><a href="edit_quote.php?id=' . $row['id'] . '"><i class="fa-solid fa-pencil edit me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        title="Edit This Quote"></i></a>
 
         <a href="delete_quote.php?id=' . $row['id'] . '"><i class="fa-solid fa-trash-can delete" data-bs-toggle="tooltip" data-bs-placement="top"
         data-bs-custom-class="custom-tooltip"
@@ -39,7 +52,5 @@ if ($result = mysqli_query($dbc, $query)) {
 }
 
 mysqli_close($dbc);
-
-echo '<p><a href="index.php">Latest</a> | <a href="index.php?random=true">Random</a> | <a href="index.php?favorite=true">Random Favorite</a></p>';
 
 include './templates/footer.php';
