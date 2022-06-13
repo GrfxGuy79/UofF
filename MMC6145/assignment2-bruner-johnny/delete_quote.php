@@ -23,16 +23,20 @@ if (isset($_GET['id']) && is_numeric($_GET['id']) && ($_GET['id'] > 0)) {
         $row = mysqli_fetch_array($result);
 
         // DELETE FORM
-        echo '<form action="delete_quote.php" method="POST">
-        <div class="mb-3">Are you sure you want to delete this quote?</div>
-        <div class="mb-3"><blockquote>' . $row['quote'] . '</blockquote>- ' . $row['source'] . '';
+        echo '        <h3 class="mb-3">Are you sure you want to delete this quote?</h3>
 
+        <form action="delete_quote.php" method="POST">';
         // CHECK IF FAVORITE
         if ($row['favorite'] == 1) {
-            echo '<strong>Favorite</strong>';
+            echo '<i class="fa-solid fa-star viewFav" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        title="This Is A Favorite Quote"></i>';
         }
 
-        echo '</div>
+        echo '<div class="quote">' . $row['quote'] . '</div>
+    <div class="source">- ' . $row['source'] . '</div>';
+
+        echo '
         <input type="hidden" name="id" value="' . $_GET['id'] . '">
           <button type="submit" class="btn btn-danger">Delete Quote</button>
         </form>';
