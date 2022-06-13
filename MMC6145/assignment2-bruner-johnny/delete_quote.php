@@ -28,7 +28,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id']) && ($_GET['id'] > 0)) {
         <div class="mb-3"><blockquote>' . $row['quote'] . '</blockquote>- ' . $row['source'] . '';
 
         // CHECK IF FAVORITE
-        if ($row['favorite'] === 1) {
+        if ($row['favorite'] == 1) {
             echo '<strong>Favorite</strong>';
         }
 
