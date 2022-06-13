@@ -19,18 +19,52 @@ $query = "SELECT * FROM quotes ORDER BY date_entered DESC";
 
 if ($results = mysqli_query($dbc, $query)) {
     // RETRIEVE QUOTES
-    while ($row = mysqli_fetch_array($results)) {
-        echo '<div><blockquote>' . $row['quote'] . '</blockquote>-' . $row['source'] . '';
+    echo '<div class=table-responsive">
+        <table class="table table-sm">
+            <thead>
+                <th>
+                    Fav
+                </th>
+                <th>
+                    Quote
+                </th>
+                <th>
+                    Source
+                </th>
+                <th>
+                    Admin
+                </th>
+            </thead>';
 
-        // CHECK IF FAVORITE
+    while ($row = mysqli_fetch_array($results)) {
+        echo '<tr>
+        <td>';
+// CHECK IF FAVORITE
         if ($row['favorite'] == 1) {
-            echo '<strong>Favorite</strong>';
+            echo '<i class="fa-solid fa-star viewFav" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        title="This Is A Favorite Quote"></i>';
         }
 
-        // ADMIN LINKS
-        echo '<p>Quote Admin: <a href="edit_quote.php?id=' . $row['id'] . '">Edit</a>
-        <a href="delete_quote.php?id=' . $row['id'] . '">Delete</a></p></div>';
+        echo '</td>
+        <td>
+        ' . $row['quote'] . '
+        </td>
+        <td>
+        ' . $row['source'] . '
+        </td>
+        <td>
+<div><p><a href="edit_quote.php?id=' . $row['id'] . '"><i class="fa-solid fa-pencil edit me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        title="Edit This Quote"></i></a>
+
+        <a href="delete_quote.php?id=' . $row['id'] . '"><i class="fa-solid fa-trash-can delete" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        title="Delete This Quote"></i></a></p></div>
+        </td>
+        </tr>';
     }
+    echo '</table></div>';
 } else {
     echo '<p class="error">Could not retrieve the data because ' . mysqli_error($dbc) . ' </p>';
     echo '<p>The query being ran is: ' . $query . '</p>';

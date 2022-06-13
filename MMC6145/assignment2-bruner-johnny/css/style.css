@@ -21,6 +21,9 @@ h1 {
     font-size: 2rem;
 }
 
+h2,h3{
+    text-align: center;
+}
 nav {
     margin: 0 0 2rem;
 }
@@ -39,6 +42,8 @@ nav {
 .favorite{
     color: yellow;
     font-size: 1.5rem;
+}.viewFav{
+   color: yellow; 
 }
 .viewlinks{
     text-align: center;
