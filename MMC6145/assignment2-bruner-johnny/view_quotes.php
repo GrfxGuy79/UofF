@@ -23,13 +23,13 @@ if ($results = mysqli_query($dbc, $query)) {
         echo '<div><blockquote>' . $row['quote'] . '</blockquote>-' . $row['source'] . '';
 
         // CHECK IF FAVORITE
-        if ($row['favorite'] === 1) {
+        if ($row['favorite'] == 1) {
             echo '<strong>Favorite</strong>';
         }
 
         // ADMIN LINKS
-        echo '<p>Quote Admin: <a href="/edit_quote.php?id=' . $row['id'] . '">Edit</a>
-        <a href="/delete_quote.php?id=' . $row['id'] . '">Delete</a></p></div>';
+        echo '<p>Quote Admin: <a href="edit_quote.php?id=' . $row['id'] . '">Edit</a>
+        <a href="delete_quote.php?id=' . $row['id'] . '">Delete</a></p></div>';
     }
 } else {
     echo '<p class="error">Could not retrieve the data because ' . mysqli_error($dbc) . ' </p>';
