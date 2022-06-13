@@ -39,9 +39,9 @@ include './includes/functions.php';
 if ((is_admin()) || (isset($loggedin) && $loggedin)) {
     echo '<form class="d-flex">
     <a href="view_quotes.php">
-        <button class="btn btn-outline-primary" type="button">View All Quotes</button></a>
+        <button class="btn btn-outline-primary me-2" type="button">View All Quotes</button></a>
         <a href="add_quote.php">
-        <button class="btn btn-outline-info" type="button">Add A New Quote</button></a>
+        <button class="btn btn-outline-info me-2" type="button">Add A New Quote</button></a>
         <a href="logout.php">
         <button class="btn btn-outline-danger" type="button">Logout</button></a>
       </form>';
