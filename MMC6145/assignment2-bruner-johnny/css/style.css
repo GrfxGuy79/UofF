@@ -14,16 +14,20 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 
 }
-.container{
+
+.container {
     margin: 0 5rem;
 }
+
 h1 {
     font-size: 2rem;
 }
 
-h2,h3{
+h2,
+h3 {
     text-align: center;
 }
+
 nav {
     margin: 0 0 2rem;
 }
@@ -39,23 +43,30 @@ nav {
 .delete {
     color: red;
 }
-.favorite{
+
+.favorite {
     color: yellow;
     font-size: 1.5rem;
-}.viewFav{
-   color: yellow; 
 }
-.viewlinks{
+
+.viewFav {
+    color: yellow;
+}
+
+.viewlinks {
     text-align: center;
     padding: 2rem 0;
 }
-.quote{
+
+.quote {
     font-size: 1.5rem;
     font-weight: 600;
 }
-.source{
+
+.source {
     font-style: italic;
 }
+
 /* FOOTER */
 footer {
     margin: 3rem 0;
