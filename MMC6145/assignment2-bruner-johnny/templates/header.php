@@ -6,36 +6,41 @@ include './includes/functions.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/64db3d57b9.js"></script>
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/1b30983403.js"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
 
-    <title>My Site Of Quotes</title>
+  <title>My Site Of Quotes</title>
 
 </head>
+
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.php"><h1>My Site of Quotes</h1></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarContent">
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.php">
+        <h1>My Site of Quotes</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
 
-    <!-- CHECK IF LOGGED IN -->
-    <?php
+        <!-- CHECK IF LOGGED IN -->
+        <?php
 if ((is_admin()) || (isset($loggedin) && $loggedin)) {
     echo '<form class="d-flex">
     <a href="view_quotes.php">
@@ -53,9 +58,9 @@ if ((is_admin()) || (isset($loggedin) && $loggedin)) {
 }
 ?>
 
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-    <!-- BODY CONTENT -->
-    <div class="container">
+  <!-- BODY CONTENT -->
+  <div class="container">
