@@ -27,8 +27,11 @@ if ($result = mysqli_query($dbc, $query)) {
 
     if (is_admin()) {
         // ADMIN LINKS
-        echo '<div><p>Quote Admin: <a href="edit_quote.php?id=' . $row['id'] . '">Edit</a>
-        <a href="delete_quote.php?id=' . $row['id'] . '">Delete</a></p></div>';
+        echo '<div><p><a href="edit_quote.php?id=' . $row['id'] . '"><i class="fa-solid fa-pencil edit me-2"></i></a>
+
+        <a href="delete_quote.php?id=' . $row['id'] . '"><i class="fa-solid fa-trash-can delete" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        title="Delete This Quote"></i></a></p></div>';
     }
 } else {
     echo '<p class="error">Could not retrieve the data because ' . mysqli_error($dbc) . ' </p>';
