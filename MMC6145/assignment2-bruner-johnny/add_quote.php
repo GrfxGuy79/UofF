@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!-- ADD QUOTE FORM -->
-<form>
+<form action="add_quote.php" method="POST">
   <div class="mb-3">
     <label for="quote" class="form-label">Quote</label>
     <textarea name="quote" id="quote" cols="30" rows="10"></textarea>
