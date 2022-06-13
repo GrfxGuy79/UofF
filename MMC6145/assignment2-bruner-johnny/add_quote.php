@@ -29,7 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // INSERT INTO DB
-        $query = "INSERT INTO quotes(quote, source, favorite)VALUES('$quote','$source','$favorite')";
+        $query = "INSERT INTO quotes(quote, source, favorite)VALUES('$quote','$source',$favorite)";
+        mysqli_query($dbc, $query);
 
         if (mysqli_affected_rows($dbc) == 1) {
             echo '<p>Your quote has been stored</p>';
