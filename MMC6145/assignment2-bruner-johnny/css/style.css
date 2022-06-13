@@ -1,1 +1,31 @@
-style
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600&display=swap');
+
+/* GLOBAL */
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+font-family: 'Josefin Sans', sans-serif;
+
+}
+
+h1{
+    font-size: 2rem;
+}
+nav{
+    margin: 0 0 2rem;
+}
+.navbar{
+    padding: 1rem 4rem;
+}
+
+/* FOOTER */
+footer{
+    margin: 3rem 0;
+    text-align: center;
+}
