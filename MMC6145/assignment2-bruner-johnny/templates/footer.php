@@ -1,3 +1,8 @@
+
+<footer>
+Content &copy; <?php echo date('Y'); ?>
+</footer>
+
 </div>
 
 <!-- BOOTSTRAP -->
