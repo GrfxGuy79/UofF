@@ -11,12 +11,16 @@ if (have_posts()) {
         <div class="featured-image">
             <?php the_post_thumbnail('medium');?>
             <p>
-                <?php echo 'Post written by: ' . get_the_author() . ' | Published on: ' . get_the_date(); ?>
+                 <!-- DISPLAY AUTHOR AND DATE -->
+<?php post_data();?>
             </p>
         </div><!-- featured image -->
 
         <div class="text-container">
+            <!-- DISPLAY AUTHOR -->
             <h2><?php the_title();?></h2>
+
+<!-- DISPLAY CONTENT -->
             <p class="body-content">
                 <?php the_content();?>
             </p>
