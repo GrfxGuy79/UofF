@@ -55,3 +55,18 @@ function post_data()
     <?php
 
 }
+
+/*------------------------------
+THEME MENUS
+------------------------------*/
+function my_menus()
+{
+    register_nav_menus(array(
+        'main-menu' => __('Main Menu'),
+        'footer-left' => __('Left Footer Menu'),
+        'footer-middle' => __('Middle Footer Menu'),
+        'footer-right' => __('Right Footer Menu'),
+    ));
+}
+// ADD FUNCTION TO SITE
+add_action('init', 'my_menus');

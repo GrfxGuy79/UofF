@@ -34,8 +34,12 @@ if (get_header_image() == '') {?>
 ?>
                 </div><!-- logo -->
 
-                <div class="col-lg-6 navigation">
-                </div><!-- navigation -->
+                <nav class="col-lg-6 navigation custom-menu-class">
+                    <?php wp_nav_menu(array(
+    'theme_location' => 'main-menu',
+));
+?>
+                </nav><!-- navigation -->
             </div><!-- row -->
         </div><!-- container -->
     </header>
