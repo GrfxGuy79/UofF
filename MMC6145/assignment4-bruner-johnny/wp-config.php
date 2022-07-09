@@ -23,10 +23,10 @@
 define('DB_NAME', 'mmc6145_assignment4');
 
 /** Database username */
-define('DB_USER', 'jbdesigns');
+define('DB_USER', 'root');
 
 /** Database password */
-define('DB_PASSWORD', 'JBoy1979!');
+define('DB_PASSWORD', 'root!');
 
 /** Database hostname */
 define('DB_HOST', 'localhost');
