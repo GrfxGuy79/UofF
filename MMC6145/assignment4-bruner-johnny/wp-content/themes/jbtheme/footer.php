@@ -43,6 +43,9 @@ if (has_nav_menu('footer-right')) {?>
         </div>
     </div>
 </footer>
+
+<?php wp_footer();?>
+
 </body>
 
 </html>
