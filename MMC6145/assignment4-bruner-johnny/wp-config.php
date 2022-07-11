@@ -26,7 +26,7 @@ define('DB_NAME', 'mmc6145_assignment4');
 define('DB_USER', 'root');
 
 /** Database password */
-define('DB_PASSWORD', 'root!');
+define('DB_PASSWORD', 'root');
 
 /** Database hostname */
 define('DB_HOST', 'localhost');
