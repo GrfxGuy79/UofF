@@ -6,12 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
-
-
     <title><?php bloginfo('name');?></title>
 
     <?php wp_head();?>
@@ -37,14 +31,14 @@ if (get_header_image() == '') {?>
                     <?php
 }
 ?>
-                </div><!-- logo -->
+                </div>
 
                 <nav class="col-lg-6 navigation custom-menu-class">
                     <?php wp_nav_menu(array(
     'theme_location' => 'main-menu',
 ));
 ?>
-                </nav><!-- navigation -->
-            </div><!-- row -->
-        </div><!-- container -->
+                </nav>
+            </div>
+        </div>
     </header>
