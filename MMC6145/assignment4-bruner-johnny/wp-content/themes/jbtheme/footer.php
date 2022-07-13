@@ -43,6 +43,12 @@ if (has_nav_menu('footer-right')) {?>
                 <?php } else {echo "No Menu Has Been Set!";}?>
             </div>
         </div>
+
+    <div class="row">
+        <div class="copyright-info text-center">
+        Copyright <?php echo date('Y'); ?>, All Rights Reserved.
+        </div>
+    </div>
     </div>
 </footer>
 
