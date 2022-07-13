@@ -17,11 +17,11 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 logo-container">
+                <div class="col-lg-6 col-md-4 col-sm-2">
                     <?php
 // IF LOGO IMAGE IS NOT SET THEN DISPLAY TEXT
 if (get_header_image() == '') {?>
-                    <h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name');?></a></h1>
+                    <h1><a href="<?php echo get_home_url(); ?>" class="logo-text"><?php bloginfo('name');?></a></h1>
                     <?php
 } else {?>
                     <a href="<?php echo get_home_url(); ?>"><img src="<?php header_image();?>" alt="logo" class="logo"
@@ -33,9 +33,7 @@ if (get_header_image() == '') {?>
 ?>
                 </div>
 
-
-
-                <nav class="navbar col-lg-6 navbar-expand-lg">
+                <nav class="navbar col-lg-6 col-md-4 col-sm-2 navbar-expand-lg">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

@@ -1,4 +1,6 @@
 <footer>
+    <div class="border-bar"></div>
+
     <div class="container">
         <div class="row">
 
