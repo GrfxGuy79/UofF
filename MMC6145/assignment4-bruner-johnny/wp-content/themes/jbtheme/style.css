@@ -125,6 +125,18 @@ main {
     width: 100%;
 }
 
+/* PAGINATION */
+.page-numbers{
+    display: inline;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(77, 1, 105, 1);
+    padding: 0 .5rem;
+}
+.page-numbers:hover{
+    color:rgba(242, 4, 213, 1);
+}
+
 /* HEADER */
 header {
     font-family: "Josefin Sans", sans-serif;
@@ -180,6 +192,7 @@ padding: 1rem 0;}
 /* FOOTER */
 footer {
     margin: 2rem 0;
+    padding: 1rem 0;
 }
 
 footer nav li {

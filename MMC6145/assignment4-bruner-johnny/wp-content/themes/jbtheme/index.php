@@ -7,8 +7,8 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();?>
 
-        <div class="individual-post">
-            <div class="row justify-content-center">
+    <div class="individual-post">
+        <div class="row justify-content-center">
             <div class="col-lg-2">
                 <div class="featured-image">
                     <a href="<?php the_permalink();?>"><?php the_post_thumbnail('thumbnail');?></a>
@@ -30,6 +30,11 @@ if (have_posts()) {
 
     <?php
 }
+    // ADD PAGINATION
+    echo '<div class="text-center">';
+    jbThemePagination();
+    echo '</div>';
+
 }
 ?>
 </main>
