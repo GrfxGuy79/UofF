@@ -1,21 +1,29 @@
 <?php
 
 /*------------------------------
-ADD STYLESHEETS AND JS FILES
+ADD STYLESHEETS
 ------------------------------*/
-function custom_theme_scripts()
+function custom_theme_styles()
 {
     // BOOTSTRAP CSS
     wp_enqueue_style('bs-style', get_stylesheet_directory_uri() . '/css/bootstrap.css');
 
     // MAIN STYLE CSS
-    wp_enqueue_style('main-styles', get_stylesheet_uri());
+    wp_enqueue_style('main-style', get_stylesheet_uri());
+}
+// ADD FUNCTIONALITY TO SITE
+add_action('wp_enqueue_scripts', 'custom_theme_styles');
 
+/*------------------------------
+ADD JS FILES
+------------------------------*/
+function custom_theme_scripts()
+{
     // BOOTSTRAP JS
-    wp_enqueue_script('bs-js', get_stylesheet_directory_uri() . '/js/bootstrap.js');
+    wp_enqueue_script('bs-js', get_stylesheet_directory_uri() . '/js/bootstrap.js', array(), false, true);
 
     // MAIN JS
-    wp_enqueue_script('bs-js', get_stylesheet_directory_uri() . '/js/scripts.js');
+    wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/js/scripts.js', array(), false, true);
 
 }
 // ADD FUNCTIONALITY TO SITE
