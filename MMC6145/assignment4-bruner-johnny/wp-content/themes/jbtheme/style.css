@@ -20,6 +20,8 @@ Text Domain: JBTheme
             rgba(51, 187, 255, 1) 0%,
             rgba(101, 46, 199, 1) 50%,
             rgba(254, 11, 157, 1) 100%);
+    --ThemePurple: rgba(77, 1, 105, 1);
+    --ThemePink: rgba(242, 4, 213, 1);
 }
 
 html,
@@ -76,10 +78,12 @@ body {
 
 h1 {
     font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 h2 {
     font-size: 1.75rem;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 a {
@@ -91,11 +95,13 @@ main {
 }
 
 /* NAVBAR HOVER */
-.menu-item,.home-page .post-title {
+.menu-item,
+.home-page .post-title {
     position: relative;
 }
 
-.menu-item::after,.home-page .post-title::after {
+.menu-item::after,
+.home-page .post-title::after {
     content: "";
     width: 0%;
     height: 0.3rem;
@@ -120,21 +126,23 @@ main {
     /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/
 }
 
-.menu-item:hover::after,.home-page .post-title:hover::after {
+.menu-item:hover::after,
+.home-page .post-title:hover::after {
     left: 0%;
     width: 100%;
 }
 
 /* PAGINATION */
-.page-numbers{
+.page-numbers {
     display: inline;
     font-weight: 600;
     text-align: center;
-    color: rgba(77, 1, 105, 1);
+    color: var(--ThemePurple);
     padding: 0 .5rem;
 }
-.page-numbers:hover{
-    color:rgba(242, 4, 213, 1);
+
+.page-numbers:hover {
+    color: var(--ThemePink);
 }
 
 /* HEADER */
@@ -143,7 +151,7 @@ header {
     font-size: 1.25rem;
     font-weight: 600;
     padding: 1rem 0;
-    background: rgb(77, 1, 105);
+    background: var(--ThemePurple);
     background: linear-gradient(90deg, rgba(77, 1, 105, 1) 18%, rgba(242, 4, 213, 1) 100%);
     color: white;
 }
@@ -174,34 +182,57 @@ header nav li a:hover {
 }
 
 /* HOME */
+.home-page .post-title,
+.home-page .post-title a {
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--ThemePurple);
+}
 
+.home-page .post-title a:hover {
+    color: var(--ThemePink);
+}
+
+.home-page .post-info {
+    font-size: .25rem;
+    color: rgb(211, 203, 203);
+}
+
+.individual-post {
+    padding: 1rem 0;
+}
 
 /* PAGE */
 /* SINGLE */
 /* ARCHIVE */
-.archive-page .archive-title{
+.archive-page .archive-title {
+    padding-bottom: 2rem;
     text-align: center;
+    color: var(--ThemePurple);
+    font-family: "Josefin Sans", sans-serif;
 }
+
 .archive-page .post-title,
 .archive-page .post-title a {
     font-family: "Josefin Sans", sans-serif;
-    color: rgba(77, 1, 105, 1);
+    color: var(--ThemePurple);
 }
 
 .archive-page .post-title a:hover {
-    color: rgba(242, 4, 213, 1);
+    color: var(--ThemePink);
 }
-.archive-page .post-info{
+
+.archive-page .post-info {
     font-size: .5rem;
-    color: rgb(211, 203, 203);
+    color: rgb(226, 223, 223);
 }
-.individual-post{
-padding: 1rem 0;}
+
+.individual-post {
+    padding: 1rem 0;
+}
 
 /* FOOTER */
 footer {
-    margin: 2rem 0;
-    padding: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 footer nav li {
@@ -214,7 +245,8 @@ footer nav li a:hover {
 }
 
 .border-bar {
-    background: rgb(77, 1, 105);
+    margin: .5rem 0;
+    background: var(--ThemePurple);
     background: linear-gradient(90deg, rgba(77, 1, 105, 1) 18%, rgba(242, 4, 213, 1) 100%);
     width: 100%;
     height: 4px;

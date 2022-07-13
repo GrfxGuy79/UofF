@@ -2,8 +2,8 @@
 
 <main class="container archive-page">
 
-                <h1 class="archive-title">
-                    <?php
+    <h1 class="archive-title">
+        <?php
 if (is_category()) {
     single_cat_title();
 } elseif (is_tag()) {
@@ -18,7 +18,7 @@ if (is_category()) {
     echo "Archives";
 }
 ?>
-                </h2><!-- archive title -->
+    </h1>
     <?php
 
 if (have_posts()) {
@@ -26,7 +26,7 @@ if (have_posts()) {
         the_post();?>
 
     <div class="individual-post">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-content-center">
             <div class="col-lg-2">
                 <div class="featured-image">
                     <a href="<?php the_permalink();?>"><?php the_post_thumbnail('thumbnail');?></a>
