@@ -33,11 +33,19 @@ if (get_header_image() == '') {?>
 ?>
                 </div>
 
-                <nav class="col-lg-6 navigation custom-menu-class">
+
+
+                <nav class="navbar col-lg-6 navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent"">
                     <?php wp_nav_menu(array(
     'theme_location' => 'main-menu',
 ));
 ?>
+                </div>
                 </nav>
             </div>
         </div>

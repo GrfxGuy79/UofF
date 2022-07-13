@@ -9,3 +9,88 @@ License: GNU General Public License v2 or Later
 License URI: https://www.gnu.org/Licenses/old-licenses/gpl-2.0.en.html
 Text Domain: JBTheme
 */
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+/* GLOBAL */
+html,
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+    border: none;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    padding: 1rem 0;
+    background: black;
+    color: white;
+}
+
+header nav{
+    text-align: center;
+}
+header nav li {
+    display: inline;
+    padding: 0 .5rem;
+}
+
+/* HOME */
+/* PAGE */
+/* SINGLE */
+/* ARCHIVE */
+/* FOOTER */
+footer nav li{
+    display: block;
+}
