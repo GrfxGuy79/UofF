@@ -29,16 +29,18 @@ if (have_posts()) {
         <div class="row justify-content-center align-content-center">
             <div class="col-lg-2">
                 <div class="featured-image">
+                    <!-- GET FEATURED IMAGE -->
                     <a href="<?php the_permalink();?>"><?php the_post_thumbnail('thumbnail');?></a>
                 </div>
             </div>
 
             <div class="col-lg-8">
                 <div class="text-container">
-
+                    <!-- GET TITLE -->
                     <h2 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
                     <!-- DISPLAY AUTHOR AND DATE -->
                     <p class="post-info"><?php post_data();?></p>
+                    <!-- GET POST -->
                     <p class="excerpt">
                         <?php echo get_the_excerpt(); ?>
                     </p>
@@ -60,4 +62,4 @@ if (have_posts()) {
 ?>
 </main>
 
-<?php get_footer();
+<?php get_footer();?>
