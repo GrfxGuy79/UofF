@@ -174,21 +174,30 @@ header nav li a:hover {
 }
 
 /* HOME */
-.home-page .post-title,
-.home-page .post-title a {
-    font-family: "Josefin Sans", sans-serif;
-    color: rgba(77, 1, 105, 1);
-}
 
-.home-page .post-title a:hover {
-    color: rgba(242, 4, 213, 1);
-}
-.individual-post{
-padding: 1rem 0;}
 
 /* PAGE */
 /* SINGLE */
 /* ARCHIVE */
+.archive-page .archive-title{
+    text-align: center;
+}
+.archive-page .post-title,
+.archive-page .post-title a {
+    font-family: "Josefin Sans", sans-serif;
+    color: rgba(77, 1, 105, 1);
+}
+
+.archive-page .post-title a:hover {
+    color: rgba(242, 4, 213, 1);
+}
+.archive-page .post-info{
+    font-size: .5rem;
+    color: rgb(211, 203, 203);
+}
+.individual-post{
+padding: 1rem 0;}
+
 /* FOOTER */
 footer {
     margin: 2rem 0;
