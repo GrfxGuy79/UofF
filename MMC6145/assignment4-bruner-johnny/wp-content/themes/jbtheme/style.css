@@ -14,6 +14,7 @@ Text Domain: JBTheme
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
 
+/* GLOBAL */
 :root {
     --Blu-Pnk-Pur-Gradient: linear-gradient(90deg,
             rgba(51, 187, 255, 1) 0%,
@@ -21,7 +22,6 @@ Text Domain: JBTheme
             rgba(254, 11, 157, 1) 100%);
 }
 
-/* GLOBAL */
 html,
 body {
     border: none;
@@ -74,16 +74,28 @@ body {
     color: black;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
 a {
     text-decoration: none;
 }
 
+main {
+    padding: 2rem 0;
+}
+
 /* NAVBAR HOVER */
-.menu-item {
+.menu-item,.home-page .post-title {
     position: relative;
 }
 
-.menu-item::after {
+.menu-item::after,.home-page .post-title::after {
     content: "";
     width: 0%;
     height: 0.3rem;
@@ -108,13 +120,14 @@ a {
     /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/
 }
 
-.menu-item:hover::after {
+.menu-item:hover::after,.home-page .post-title:hover::after {
     left: 0%;
     width: 100%;
 }
 
 /* HEADER */
 header {
+    font-family: "Josefin Sans", sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
     padding: 1rem 0;
@@ -135,7 +148,8 @@ header nav li {
     padding: 0 .5rem;
 }
 
-header nav li a,header nav li a:hover {
+header nav li a,
+header nav li a:hover {
     color: white;
 }
 
@@ -148,6 +162,18 @@ header nav li a,header nav li a:hover {
 }
 
 /* HOME */
+.home-page .post-title,
+.home-page .post-title a {
+    font-family: "Josefin Sans", sans-serif;
+    color: rgba(77, 1, 105, 1);
+}
+
+.home-page .post-title a:hover {
+    color: rgba(242, 4, 213, 1);
+}
+.individual-post{
+padding: 1rem 0;}
+
 /* PAGE */
 /* SINGLE */
 /* ARCHIVE */
@@ -160,7 +186,8 @@ footer nav li {
     display: block;
 }
 
-footer nav li a,footer nav li a:hover {
+footer nav li a,
+footer nav li a:hover {
     color: black;
 }
 
