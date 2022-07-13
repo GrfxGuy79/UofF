@@ -203,12 +203,17 @@ header nav li a:hover {
 
 /* PAGE */
 /* SINGLE */
+.single-page .single-title{
+    font-size: 3rem;    color: var(--ThemePurple);
+}
+.single-page .post-info, .single-page .single-content{
+    padding: 1rem 0;
+}
 /* ARCHIVE */
-.archive-page .archive-title {
+.archive-page .archive-title {font-size: 3rem;
     padding-bottom: 2rem;
     text-align: center;
     color: var(--ThemePurple);
-    font-family: "Josefin Sans", sans-serif;
 }
 
 .archive-page .post-title,
