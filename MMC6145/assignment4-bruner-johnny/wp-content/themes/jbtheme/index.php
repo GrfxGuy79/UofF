@@ -18,8 +18,14 @@ if (have_posts()) {
                 <div class="text-container">
                     <!-- GET TITLE -->
                     <h2 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+
                     <!-- DISPLAY AUTHOR AND DATE -->
-                    <p class="post-info"><?php post_data();?></p>
+                        <p><?php post_data();?></p>
+                        <!-- GET CATEGORIES -->
+                        <p class="category-title">
+                            Category: <a href="<?php the_permalink();?>"><?php the_category();?></a>
+                        </p>
+
                     <!-- GET POST -->
                     <p class="excerpt">
                         <?php echo get_the_excerpt(); ?>

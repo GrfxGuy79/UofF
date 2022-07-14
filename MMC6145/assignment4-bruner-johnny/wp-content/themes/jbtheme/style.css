@@ -90,6 +90,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 main {
     padding: 2rem 0;
 }
@@ -192,8 +196,8 @@ header nav li a:hover {
     color: var(--ThemePink);
 }
 
-.home-page .post-info {
-    font-size: .25rem;
+.post-info {
+    font-size: .75rem;
     color: rgb(211, 203, 203);
 }
 
@@ -201,16 +205,23 @@ header nav li a:hover {
     padding: 1rem 0;
 }
 
-/* PAGE */
+.category-title {
+    display: inline;
+}
+
 /* SINGLE */
-.single-page .single-title{
-    font-size: 3rem;    color: var(--ThemePurple);
+.single-page .single-title {
+    font-size: 3rem;
+    color: var(--ThemePurple);
 }
-.single-page .post-info, .single-page .single-content{
-    padding: 1rem 0;
+
+.single-page .single-content {
+    padding: 1rem;
 }
+
 /* ARCHIVE */
-.archive-page .archive-title {font-size: 3rem;
+.archive-page .archive-title {
+    font-size: 3rem;
     padding-bottom: 2rem;
     text-align: center;
     color: var(--ThemePurple);
@@ -224,11 +235,6 @@ header nav li a:hover {
 
 .archive-page .post-title a:hover {
     color: var(--ThemePink);
-}
-
-.archive-page .post-info {
-    font-size: .5rem;
-    color: rgb(226, 223, 223);
 }
 
 .individual-post {

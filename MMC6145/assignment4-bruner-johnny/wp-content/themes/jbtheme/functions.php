@@ -86,11 +86,12 @@ function post_data()
     $archive_month = get_the_date('m');
     $archive_day = get_the_date('d');
     ?>
-    <p>Written by:
-        <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
-    <?php echo get_the_author(); ?></a>
+<p class="post-info">Written by:
+    <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
+        <?php echo get_the_author(); ?></a>
     | Published on:
-    <a href="<?php echo get_day_link($archive_year, $archive_month, $archive_day); ?>"><?php echo "$archive_month/$archive_day/$archive_year"; ?></a></p>
-    <?php
-
+    <a
+        href="<?php echo get_day_link($archive_year, $archive_month, $archive_day); ?>"><?php echo "$archive_month/$archive_day/$archive_year"; ?></a>
+</p>
+<?php
 }

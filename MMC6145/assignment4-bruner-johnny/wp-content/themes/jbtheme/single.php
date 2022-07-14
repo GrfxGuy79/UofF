@@ -15,7 +15,7 @@ if (have_posts()) {
                     <!-- GET TITLE -->
                     <h1 class="single-title"><?php the_title();?></h1>
                     <!-- DISPLAY AUTHOR AND DATE -->
-                    <p class="post-info"><?php post_data();?></p>
+                    <p><?php post_data();?></p>
 
                     <!-- GET FEATURED IMAGE -->
                     <?php the_post_thumbnail('large');?>
