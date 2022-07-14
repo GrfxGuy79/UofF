@@ -47,12 +47,14 @@ function post_data()
     $archive_month = get_the_date('m');
     $archive_day = get_the_date('d');
     ?>
-    <p>Written by:
-        <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
-    <?php echo get_the_author(); ?></a>
+<p>Written by:
+    <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
+        <?php echo get_the_author(); ?></a>
     | Published on:
-    <a href="<?php echo get_day_link($archive_year, $archive_month, $archive_day); ?>"><?php echo "$archive_month/$archive_day/$archive_year"; ?></a></p>
-    <?php
+    <a
+        href="<?php echo get_day_link($archive_year, $archive_month, $archive_day); ?>"><?php echo "$archive_month/$archive_day/$archive_year"; ?></a>
+</p>
+<?php
 
 }
 
@@ -89,3 +91,30 @@ function themePagination()
         'before_page_number' => '<span class="screen-reader-text">' . $translated . '</span>',
     ));
 }
+
+/*------------------------------
+CREATING WIDGETS
+------------------------------*/
+function blank_widgets_init()
+{
+    register_sidebar(array(
+        'name' => ('Sidebar Widget'),
+        'id' => 'sidebar-widget',
+        'description' => 'Area in sidebar for content',
+        'before_widget' => '<div class="sidebar-widget-container">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => ('Right Footer Widget'),
+        'id' => 'right-footer-widget',
+        'description' => 'Area in right footer for content',
+        'before_widget' => '<div class="right-footer-widget-container">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>',
+    ));
+}
+add_action('widgets_init', 'blank_widgets_init');
