@@ -21,6 +21,8 @@ if (have_posts()) {
     </div><!-- individual post -->
     <?php
 }
+// PAGINATION
+    themePagination();
 }
 ?>
 </main>

@@ -70,3 +70,22 @@ function my_menus()
 }
 // ADD FUNCTION TO SITE
 add_action('init', 'my_menus');
+
+/*------------------------------
+PAGINATION
+------------------------------*/
+function themePagination()
+{
+    global $wp_query;
+
+    $big = 9999999999;
+    $translated = __('Page', 'mytextdomain');
+
+    echo paginate_links(array(
+        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+        'format' => '?paged=%#%',
+        'current' => max(1, get_query_var('paged')),
+        'total' => $wp_query->max_num_pages,
+        'before_page_number' => '<span class="screen-reader-text">' . $translated . '</span>',
+    ));
+}
