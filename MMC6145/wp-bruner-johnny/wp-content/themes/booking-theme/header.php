@@ -43,3 +43,5 @@ if (get_header_image() == '') {?>
             </div><!-- row -->
         </div><!-- container -->
     </header>
+
+    <?php get_search_form();?>
