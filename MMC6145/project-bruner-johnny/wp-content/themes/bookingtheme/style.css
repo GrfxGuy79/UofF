@@ -72,7 +72,8 @@ td {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: white;
+    background: black;
 }
 
 h1 {
